@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body{
+    background-color: rgb(2, 28, 58);
+} */
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color:  rgb(158, 186, 218);
+}
+
+.container {
+    position: relative;
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    padding: 10px;
+    list-style: none;
+}
+
+nav>ul>li>a {
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* Now Start Mega Menu */
+
+.megamenu {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 0px;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1ms;
+    width: 100%;
+    background-color:  rgb(158, 186, 218);
+    box-shadow: 0px 10px 2px 3px rgb(2, 28, 58);
+}
+
+nav>ul>li:hover .megamenu {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.megamenuitem {
+    flex-basis: 31%;
+    margin: 1%;
+}
+
+.megamenuitem>ul>li {
+    list-style: none;
+    padding: 7px;
+}
+
+.megamenuitem h2 {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar .menu .submenu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 100px;
+    background-color: rgb(158, 186, 218);
+}
+
+.navbar .menu .submenu li a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 50px;
+    border-bottom: 1px solid white;
+    display: block;
+    text-align: center;
+}
+
+.navbar>.menu>li:hover>ul {
+    display: block;
+}
+
+.navbar .menu ul li{
+    position: relative;
+}
+
+.navbar .menu .submenu .submenu1 {
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 100px;
+    background-color: rgb(158, 186, 218);
+}
+
+.navbar .menu .submenu li:hover ul {
+    /* border: red solid 2px; */
+    display: block;
+    left: 100%;
+    top: 0%;
+}
+
+
+.container2 {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    float: right;
+    align-content: space-around;
+}
+
+.div1 {
+    margin-top: 0px;
+    height: 350px;
+    width: 60%;
+    background-color: rgb(2, 28, 58);
+    /* border: rgb(0, 0, 0) solid 2px; */
+}
+
+@keyframes textmove {
+    0% {
+        margin-left: 265px;
+        opacity: 0%;
+        ;
+    }
+
+    100% {
+        margin-left: 0px;
+        opacity: 100%;
+    }
+}
+
+.div1 p,
+h1,
+button {
+    margin-left: 0px;
+    animation: textmove 4s 0s linear;
+}
+
+.div1 p {
+    font-size: 17px;
+    line-height: 20px;
+    text-align: justify;
+    color: rgb(202, 203, 204);
+}
+
+.div1 h1 {
+    font-size: 45px;
+    color: rgb(214, 213, 213);
+    margin-bottom: 10px;
+}
+
+.div1 button {
+    font-size: 25 px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.div2 {
+    margin-top: 0px;
+    height: 350px;
+    width: 40%;
+    background-color: rgb(2, 28, 58);
+    /* border: rgb(0, 0, 0) solid 2px; */
+}
+
+@keyframes moveimage {
+    0% {
+        margin-left: -100px;
+        opacity: 0%;
+    }
+
+    100% {
+        margin-left: 150px;
+        opacity: 100%;
+    }
+}
+
+.div2 img {
+    height: 95%;
+    width: auto;
+    margin-left: 150px;
+    animation-name: moveimage;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    /* border: rgb(0, 0, 0) solid 2px; */
+}
